@@ -19,19 +19,17 @@ public class SortBuble {
         for (int i=0;i<size;i++) {
             System.out.print(mass[i]+" ");
         }
-        for(int i = 0 ; i < size-1 ; i++){
+        for(int i = 0 ; i < size ; i++){
             for(int j = 0 ; j <size-1 ; j++){
-                if( mass[i] > mass[j+1] ){
-                int tmp = mass[i];
-                mass[i] = mass[j+1];
+                if( mass[j] > mass[j+1] ){
+                int tmp = mass[j];
+                mass[j] = mass[j+1];
                 mass[j+1] = tmp;
             }
         }
     }
         System.out.println("Ваш массив отсортирован:");
-        for (int i:mass
-        ) {
-            System.out.print(mass[i]+" ");
-        }
+        for (int i=0;i<size;i++)
+            System.out.print(mass[i] + " ");
     }
 }
