@@ -9,8 +9,6 @@ public class DelitSpace {
         String row = in.nextLine();
         String[] LostSpace=row.split(" ");
         System.out.println("Ваша строка без пробелов: ");
-        for (int i=0;i<row.length();i++) {
-            System.out.print(LostSpace[i]);
-        }
+        for (String s : LostSpace) System.out.print(s);
     }
 }
