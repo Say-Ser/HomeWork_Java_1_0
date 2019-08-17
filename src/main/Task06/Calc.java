@@ -13,7 +13,7 @@ public class Calc {
         z=in.nextInt();
         avg= (float)((x+y+z)/3.0);
         System.out.println("Среднее арифметическое x, y, z: " +avg) ;
-        if (avg/2>3) {
+        if ((int)avg/2>3) {
             System.out.println("Программа выполнена корректно");
         }
     }
